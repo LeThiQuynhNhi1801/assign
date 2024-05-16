@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giao công việc</title>
+    <link rel="stylesheet" href="/index.css">
+
+</head>
+<body>
+<h1>Giao công việc</h1>
+<form id="assignForm">
+    <div class="task-form">
+        <label for="name">Tên nhiệm vụ:</label>
+        <input type="text" id="name" name="name">
+        <br>
+        <label for="description">Mô tả:</label>
+        <textarea id="description" name="description"></textarea>
+        <br>
+        <label for="deadline">Deadline:</label>
+        <input type="datetime-local" id="deadline" name="deadline">
+        <br>
+        <button type="button" onclick="toggleUserSelect(this)" class="addUser">Chọn người thực hiện</button>
+        <div class="user-select">
+            <label><input type="checkbox" name="user" value="user1"> User 1</label><br>
+            <label><input type="checkbox" name="user" value="user2"> User 2</label><br>
+            <label><input type="checkbox" name="user" value="user3"> User 3</label><br>
+        </div>
+        <button type="button" onclick="removeTaskForm(this)">Xóa</button>
+    </div>
+</form>
+<div class="button-container">
+    <button type="button" onclick="addTaskForm()">Thêm nhiệm vụ</button>
+    <button onclick="assignTasks()">Giao việc</button>
+</div>
+
+<script src="/assign.js"></script>
+</body>
+
+</html>

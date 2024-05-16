@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách Team</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .team {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .team-name {
+            font-weight: bold;
+        }
+
+        .btn-giaoviec {
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-giaoviec:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div id="teams-container">
+    <div class="team">
+        <span class="team-name">Team A</span>
+        <button class="btn-giaoviec">Giao việc</button>
+    </div>
+    <div class="team">
+        <span class="team-name">Team B</span>
+        <button class="btn-giaoviec">Giao việc</button>
+    </div>
+    <div class="team">
+        <span class="team-name">Team C</span>
+        <button class="btn-giaoviec">Giao việc</button>
+    </div>
+
+</div>
+
+</body>
+<script src="/home.js"></script>
+</html>

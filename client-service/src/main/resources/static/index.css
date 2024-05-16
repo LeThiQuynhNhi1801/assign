@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.task-form {
+    margin: 30px 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.task-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.task-form input[type="text"],
+.task-form textarea,
+.task-form input[type="datetime-local"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.task-form button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #45a049;
+}
+
+.user-select {
+    display: none;
+}
+
+.user-select label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Custom checkbox style */
+.user-select input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    margin-right: 5px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* căn giữa theo chiều ngang */
+}
+
+.button-container button {
+    margin: 0 10px; /* Khoảng cách giữa hai button */
+}
+
+
+
+/* Custom checkbox design */
+.user-select input[type="checkbox"] + label:before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    background-color: #fff;
+    vertical-align: middle;
+}
+
+/* Checkbox checked state */
+.user-select input[type="checkbox"]:checked + label:before {
+    content: '\2713';
+    font-size: 14px;
+    color: #4CAF50;
+    text-align: center;
+    line-height: 20px;
+}
+
+/* Show user select when button is clicked */
+.task-form.show-select .user-select {
+    display: block;
+}
+
+button {
+    padding: 10px 20px; /* Kích thước của button */
+    font-size: 16px; /* Kích thước chữ */
+    border: none; /* Loại bỏ viền */
+    border-radius: 5px; /* Bo tròn góc */
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua button */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+button:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+}
